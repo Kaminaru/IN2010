@@ -1,0 +1,771 @@
+----------------------------------
+File name: buildhouse1.txt
+----------------------------------
+--------------------
+Time: 0
+Starting: 5
+Current staff: 2
+--------------------
+Time: 4
+Starting: 1
+Finished: 5
+Starting: 6
+Current staff: 4
+--------------------
+Time: 6
+Finished: 6
+Current staff: 2
+--------------------
+Time: 8
+Finished: 1
+Starting: 2
+Current staff: 4
+--------------------
+Time: 14
+Finished: 2
+Starting: 3
+Starting: 4
+Starting: 7
+Current staff: 7
+--------------------
+Time: 15
+Finished: 3
+Finished: 4
+Current staff: 2
+--------------------
+Time: 18
+Finished: 7
+Starting: 8
+Current staff: 4
+--------------------
+Time: 22
+Finished: 8
+Current staff: 0
+
+Shortest possible project execution is: 22
+
+--------------------------------------------
+---------------INFORMATION------------------
+--------------------------------------------
+ID: 1 Name: Build-walls
+-Required time: 4
+-Required manpower: 2
+-Earliest starting time: 4
+-Slack: 0
+-Tasks that depend on this task: 2 3 
+--------------------------------------------
+ID: 2 Name: Build-roofs
+-Required time: 6
+-Required manpower: 4
+-Earliest starting time: 8
+-Slack: 0
+-Tasks that depend on this task: 3 4 7 
+--------------------------------------------
+ID: 3 Name: Put-on-wallpapers
+-Required time: 1
+-Required manpower: 2
+-Earliest starting time: 14
+-Slack: 3
+-Tasks that depend on this task: 8 
+--------------------------------------------
+ID: 4 Name: Put-on-tiles
+-Required time: 1
+-Required manpower: 3
+-Earliest starting time: 14
+-Slack: 7
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+ID: 5 Name: Build-foundation
+-Required time: 4
+-Required manpower: 2
+-Earliest starting time: 0
+-Slack: 0
+-Tasks that depend on this task: 1 6 
+--------------------------------------------
+ID: 6 Name: Make-floor
+-Required time: 2
+-Required manpower: 2
+-Earliest starting time: 4
+-Slack: 8
+-Tasks that depend on this task: 7 
+--------------------------------------------
+ID: 7 Name: Put-carpet-floor
+-Required time: 4
+-Required manpower: 2
+-Earliest starting time: 14
+-Slack: 0
+-Tasks that depend on this task: 8 
+--------------------------------------------
+ID: 8 Name: Move-in
+-Required time: 4
+-Required manpower: 4
+-Earliest starting time: 18
+-Slack: 0
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+Project is unrelizable!
+Because cycle was found:
+ => |ID/Name: 5:Build-foundation| => |ID/Name: 2:Build-roofs| => |ID/Name: 7:Put-carpet-floor| => |ID/Name: 6:Make-floor| => |ID/Name: 1:Build-walls|
+----------------------------------
+File name: examplefigure.txt
+----------------------------------
+--------------------
+Time: 0
+Starting: 1
+Starting: 2
+Current staff: 6
+--------------------
+Time: 3
+Finished: 1
+Current staff: 2
+--------------------
+Time: 5
+Finished: 2
+Starting: 3
+Starting: 4
+Current staff: 6
+--------------------
+Time: 6
+Finished: 3
+Starting: 5
+Current staff: 7
+--------------------
+Time: 7
+Finished: 4
+Starting: 6
+Current staff: 7
+--------------------
+Time: 10
+Finished: 5
+Current staff: 4
+--------------------
+Time: 15
+Finished: 6
+Starting: 7
+Starting: 8
+Current staff: 5
+--------------------
+Time: 16
+Finished: 8
+Current staff: 2
+--------------------
+Time: 18
+Finished: 7
+Current staff: 0
+
+Shortest possible project execution is: 18
+
+--------------------------------------------
+---------------INFORMATION------------------
+--------------------------------------------
+ID: 1 Name: 1
+-Required time: 3
+-Required manpower: 4
+-Earliest starting time: 0
+-Slack: 3
+-Tasks that depend on this task: 3 
+--------------------------------------------
+ID: 2 Name: 2
+-Required time: 5
+-Required manpower: 2
+-Earliest starting time: 0
+-Slack: 0
+-Tasks that depend on this task: 3 4 
+--------------------------------------------
+ID: 3 Name: 3
+-Required time: 1
+-Required manpower: 2
+-Earliest starting time: 5
+-Slack: 1
+-Tasks that depend on this task: 5 6 
+--------------------------------------------
+ID: 4 Name: 4
+-Required time: 2
+-Required manpower: 4
+-Earliest starting time: 5
+-Slack: 0
+-Tasks that depend on this task: 6 
+--------------------------------------------
+ID: 5 Name: 5
+-Required time: 4
+-Required manpower: 3
+-Earliest starting time: 6
+-Slack: 5
+-Tasks that depend on this task: 7 
+--------------------------------------------
+ID: 6 Name: 6
+-Required time: 8
+-Required manpower: 4
+-Earliest starting time: 7
+-Slack: 0
+-Tasks that depend on this task: 7 8 
+--------------------------------------------
+ID: 7 Name: 7
+-Required time: 3
+-Required manpower: 2
+-Earliest starting time: 15
+-Slack: 0
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+ID: 8 Name: 8
+-Required time: 1
+-Required manpower: 3
+-Earliest starting time: 15
+-Slack: 2
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+----------------------------------
+File name: buildgarage.txt
+----------------------------------
+--------------------
+Time: 0
+Starting: 1
+Current staff: 1
+--------------------
+Time: 14280
+Finished: 1
+Starting: 2
+Starting: 3
+Current staff: 4
+--------------------
+Time: 14284
+Finished: 2
+Current staff: 3
+--------------------
+Time: 230182
+Finished: 3
+Starting: 4
+Current staff: 2
+--------------------
+Time: 262316
+Finished: 4
+Starting: 5
+Starting: 6
+Starting: 7
+Current staff: 6
+--------------------
+Time: 262331
+Finished: 7
+Current staff: 5
+--------------------
+Time: 262458
+Finished: 6
+Current staff: 4
+--------------------
+Time: 303548
+Finished: 5
+Starting: 9
+Starting: 11
+Current staff: 6
+--------------------
+Time: 307873
+Finished: 11
+Starting: 12
+Current staff: 8
+--------------------
+Time: 309675
+Finished: 9
+Starting: 10
+Current staff: 7
+--------------------
+Time: 363997
+Starting: 8
+Finished: 10
+Current staff: 6
+--------------------
+Time: 405242
+Finished: 8
+Current staff: 4
+--------------------
+Time: 429351
+Finished: 12
+Starting: 13
+Current staff: 3
+--------------------
+Time: 430593
+Finished: 13
+Starting: 14
+Current staff: 2
+--------------------
+Time: 484913
+Finished: 14
+Current staff: 0
+
+Shortest possible project execution is: 484913
+
+--------------------------------------------
+---------------INFORMATION------------------
+--------------------------------------------
+ID: 1 Name: get-paperwork
+-Required time: 14280
+-Required manpower: 1
+-Earliest starting time: 0
+-Slack: 0
+-Tasks that depend on this task: 2 3 
+--------------------------------------------
+ID: 2 Name: call-contractor
+-Required time: 4
+-Required manpower: 1
+-Earliest starting time: 14280
+-Slack: 215898
+-Tasks that depend on this task: 4 
+--------------------------------------------
+ID: 3 Name: clean-yard
+-Required time: 215902
+-Required manpower: 3
+-Earliest starting time: 14280
+-Slack: 0
+-Tasks that depend on this task: 4 
+--------------------------------------------
+ID: 4 Name: build-foundation
+-Required time: 32134
+-Required manpower: 2
+-Earliest starting time: 230182
+-Slack: 0
+-Tasks that depend on this task: 5 6 7 
+--------------------------------------------
+ID: 5 Name: build-wall-support
+-Required time: 41232
+-Required manpower: 4
+-Earliest starting time: 262316
+-Slack: 0
+-Tasks that depend on this task: 8 9 11 
+--------------------------------------------
+ID: 6 Name: lay-electrical-cables
+-Required time: 142
+-Required manpower: 1
+-Earliest starting time: 262316
+-Slack: 222455
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+ID: 7 Name: call-electrician
+-Required time: 15
+-Required manpower: 1
+-Earliest starting time: 262316
+-Slack: 181337
+-Tasks that depend on this task: 8 
+--------------------------------------------
+ID: 8 Name: install-electrical-gate-opener
+-Required time: 41245
+-Required manpower: 2
+-Earliest starting time: 363997
+-Slack: 79671
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+ID: 9 Name: build-walls
+-Required time: 6127
+-Required manpower: 4
+-Earliest starting time: 303548
+-Slack: 79671
+-Tasks that depend on this task: 10 13 
+--------------------------------------------
+ID: 10 Name: add-gate
+-Required time: 54322
+-Required manpower: 3
+-Earliest starting time: 309675
+-Slack: 79671
+-Tasks that depend on this task: 8 
+--------------------------------------------
+ID: 11 Name: build-stairs
+-Required time: 4325
+-Required manpower: 2
+-Earliest starting time: 303548
+-Slack: 0
+-Tasks that depend on this task: 12 
+--------------------------------------------
+ID: 12 Name: add-2nd-floor
+-Required time: 121478
+-Required manpower: 4
+-Earliest starting time: 307873
+-Slack: 0
+-Tasks that depend on this task: 13 
+--------------------------------------------
+ID: 13 Name: isolate-room
+-Required time: 1242
+-Required manpower: 3
+-Earliest starting time: 429351
+-Slack: 0
+-Tasks that depend on this task: 14 
+--------------------------------------------
+ID: 14 Name: furnish-appartment
+-Required time: 54320
+-Required manpower: 2
+-Earliest starting time: 430593
+-Slack: 0
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+----------------------------------
+File name: buildrail.txt
+----------------------------------
+--------------------
+Time: 0
+Starting: 9
+Current staff: 10
+--------------------
+Time: 3
+Finished: 9
+Starting: 10
+Starting: 11
+Starting: 12
+Starting: 14
+Starting: 16
+Starting: 17
+Current staff: 56
+--------------------
+Time: 4
+Finished: 11
+Starting: 18
+Starting: 19
+Starting: 20
+Current staff: 64
+--------------------
+Time: 5
+Starting: 2
+Finished: 10
+Current staff: 70
+--------------------
+Time: 12
+Finished: 2
+Current staff: 60
+--------------------
+Time: 16
+Finished: 20
+Starting: 23
+Current staff: 61
+--------------------
+Time: 28
+Finished: 14
+Starting: 15
+Current staff: 61
+--------------------
+Time: 29
+Finished: 19
+Current staff: 57
+--------------------
+Time: 33
+Finished: 12
+Starting: 13
+Current staff: 57
+--------------------
+Time: 38
+Finished: 16
+Current staff: 45
+--------------------
+Time: 44
+Finished: 18
+Starting: 21
+Current staff: 46
+--------------------
+Time: 46
+Finished: 23
+Starting: 26
+Current staff: 48
+--------------------
+Time: 48
+Finished: 15
+Finished: 17
+Starting: 22
+Current staff: 29
+--------------------
+Time: 51
+Starting: 8
+Finished: 13
+Current staff: 24
+--------------------
+Time: 59
+Finished: 21
+Starting: 24
+Current staff: 26
+--------------------
+Time: 63
+Starting: 3
+Finished: 8
+Current staff: 29
+--------------------
+Time: 64
+Finished: 3
+Finished: 22
+Starting: 25
+Current staff: 21
+--------------------
+Time: 66
+Finished: 26
+Current staff: 14
+--------------------
+Time: 119
+Starting: 4
+Finished: 24
+Current staff: 13
+--------------------
+Time: 124
+Starting: 5
+Finished: 25
+Starting: 27
+Current staff: 22
+--------------------
+Time: 134
+Finished: 4
+Current staff: 16
+--------------------
+Time: 136
+Finished: 5
+Current staff: 10
+--------------------
+Time: 149
+Finished: 27
+Starting: 28
+Starting: 29
+Current staff: 20
+--------------------
+Time: 179
+Finished: 28
+Current staff: 10
+--------------------
+Time: 186
+Starting: 1
+Starting: 6
+Starting: 7
+Finished: 29
+Starting: 30
+Current staff: 29
+--------------------
+Time: 204
+Finished: 7
+Current staff: 23
+--------------------
+Time: 206
+Finished: 1
+Finished: 30
+Starting: 31
+Current staff: 13
+--------------------
+Time: 213
+Finished: 6
+Current staff: 7
+--------------------
+Time: 218
+Finished: 31
+Current staff: 0
+
+Shortest possible project execution is: 218
+
+--------------------------------------------
+---------------INFORMATION------------------
+--------------------------------------------
+ID: 1 Name: Install-pavement
+-Required time: 20
+-Required manpower: 10
+-Earliest starting time: 186
+-Slack: 12
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+ID: 2 Name: Install-railing
+-Required time: 7
+-Required manpower: 10
+-Earliest starting time: 5
+-Slack: 206
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+ID: 3 Name: Install-ticketmachine
+-Required time: 1
+-Required manpower: 10
+-Earliest starting time: 63
+-Slack: 154
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+ID: 4 Name: Paint-tower-1-with-arch
+-Required time: 15
+-Required manpower: 6
+-Earliest starting time: 119
+-Slack: 84
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+ID: 5 Name: Paint-tower-2
+-Required time: 12
+-Required manpower: 6
+-Earliest starting time: 124
+-Slack: 82
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+ID: 6 Name: Paint-trusses
+-Required time: 27
+-Required manpower: 6
+-Earliest starting time: 186
+-Slack: 5
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+ID: 7 Name: Paint-cables-and-rods
+-Required time: 18
+-Required manpower: 6
+-Earliest starting time: 186
+-Slack: 14
+-Tasks that depend on this task: No tasks
+--------------------------------------------
+ID: 8 Name: Put-lane-tunnel-and-intersection
+-Required time: 12
+-Required manpower: 7
+-Earliest starting time: 51
+-Slack: 143
+-Tasks that depend on this task: 3 31 
+--------------------------------------------
+ID: 9 Name: Setup-barrack
+-Required time: 3
+-Required manpower: 10
+-Earliest starting time: 0
+-Slack: 0
+-Tasks that depend on this task: 10 11 12 14 16 17 
+--------------------------------------------
+ID: 10 Name: Prepare-storage
+-Required time: 2
+-Required manpower: 4
+-Earliest starting time: 3
+-Slack: 206
+-Tasks that depend on this task: 2 
+--------------------------------------------
+ID: 11 Name: Rig-ramspace-reinforcing
+-Required time: 1
+-Required manpower: 4
+-Earliest starting time: 3
+-Slack: 5
+-Tasks that depend on this task: 18 19 20 
+--------------------------------------------
+ID: 12 Name: Build-tunnel
+-Required time: 30
+-Required manpower: 12
+-Earliest starting time: 3
+-Slack: 143
+-Tasks that depend on this task: 13 
+--------------------------------------------
+ID: 13 Name: Clean-tunnel
+-Required time: 18
+-Required manpower: 12
+-Earliest starting time: 33
+-Slack: 143
+-Tasks that depend on this task: 8 
+--------------------------------------------
+ID: 14 Name: Build-intersection
+-Required time: 25
+-Required manpower: 12
+-Earliest starting time: 3
+-Slack: 146
+-Tasks that depend on this task: 15 
+--------------------------------------------
+ID: 15 Name: Clean-intersection
+-Required time: 20
+-Required manpower: 12
+-Earliest starting time: 28
+-Slack: 146
+-Tasks that depend on this task: 8 
+--------------------------------------------
+ID: 16 Name: Build-towerfoundation-1
+-Required time: 35
+-Required manpower: 12
+-Earliest starting time: 3
+-Slack: 11
+-Tasks that depend on this task: 21 
+--------------------------------------------
+ID: 17 Name: Build-towerfoundation-2
+-Required time: 45
+-Required manpower: 12
+-Earliest starting time: 3
+-Slack: 0
+-Tasks that depend on this task: 22 
+--------------------------------------------
+ID: 18 Name: Make-armouring-tower-1
+-Required time: 40
+-Required manpower: 4
+-Earliest starting time: 4
+-Slack: 5
+-Tasks that depend on this task: 21 
+--------------------------------------------
+ID: 19 Name: Make-armouring-tower-2
+-Required time: 25
+-Required manpower: 4
+-Earliest starting time: 4
+-Slack: 19
+-Tasks that depend on this task: 22 
+--------------------------------------------
+ID: 20 Name: Make-armouring-arch
+-Required time: 12
+-Required manpower: 4
+-Earliest starting time: 4
+-Slack: 140
+-Tasks that depend on this task: 23 
+--------------------------------------------
+ID: 21 Name: Encase-and-armour-tower-1
+-Required time: 15
+-Required manpower: 5
+-Earliest starting time: 44
+-Slack: 5
+-Tasks that depend on this task: 24 
+--------------------------------------------
+ID: 22 Name: Encase-and-armour-tower-2
+-Required time: 16
+-Required manpower: 5
+-Earliest starting time: 48
+-Slack: 0
+-Tasks that depend on this task: 25 
+--------------------------------------------
+ID: 23 Name: Encase-and-armour-arch
+-Required time: 30
+-Required manpower: 5
+-Earliest starting time: 16
+-Slack: 140
+-Tasks that depend on this task: 26 
+--------------------------------------------
+ID: 24 Name: Cast-tower-1
+-Required time: 60
+-Required manpower: 7
+-Earliest starting time: 59
+-Slack: 5
+-Tasks that depend on this task: 4 27 
+--------------------------------------------
+ID: 25 Name: Cast-tower-2
+-Required time: 60
+-Required manpower: 7
+-Earliest starting time: 64
+-Slack: 0
+-Tasks that depend on this task: 5 27 
+--------------------------------------------
+ID: 26 Name: Cast-arch
+-Required time: 20
+-Required manpower: 7
+-Earliest starting time: 46
+-Slack: 140
+-Tasks that depend on this task: 31 
+--------------------------------------------
+ID: 27 Name: Stretch-two-maincables
+-Required time: 25
+-Required manpower: 10
+-Earliest starting time: 124
+-Slack: 0
+-Tasks that depend on this task: 28 29 
+--------------------------------------------
+ID: 28 Name: Build-truss-1-with-rods
+-Required time: 30
+-Required manpower: 10
+-Earliest starting time: 149
+-Slack: 7
+-Tasks that depend on this task: 1 6 7 30 
+--------------------------------------------
+ID: 29 Name: Build-truss-2-with-rods
+-Required time: 37
+-Required manpower: 10
+-Earliest starting time: 149
+-Slack: 0
+-Tasks that depend on this task: 1 6 7 30 
+--------------------------------------------
+ID: 30 Name: Cast-lane-on-truss
+-Required time: 20
+-Required manpower: 7
+-Earliest starting time: 186
+-Slack: 0
+-Tasks that depend on this task: 31 
+--------------------------------------------
+ID: 31 Name: Polish-lane-on-arch
+-Required time: 12
+-Required manpower: 7
+-Earliest starting time: 206
+-Slack: 0
+-Tasks that depend on this task: No tasks
+--------------------------------------------

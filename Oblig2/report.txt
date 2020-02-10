@@ -1,0 +1,29 @@
+1. What is the time complexity of your solution? You must explain the stated complex-
+ity. If you have a different complexity for each problem, you need to discuss them
+separately.
+  If there is a cycle in graph: 
+	O(n^2)
+	Program will only use hasCycle() method. hasCycle() takes n time.
+	After that hasCycle() will call dfs() method. That in worse case will go for n time. 
+
+  If there is no cycle in graph:
+	
+	findInfo() > O(n+n+n+n+n^2) = O(n^2)
+	simulate() > O(n^shortesttime) = O(n)
+	printInfo() > O(n)
+	
+	So together can we say that whole program have O(n^2) running time
+
+
+
+
+2. What requirements are there for the input graph in order for the project to be suc-
+cessfully planned? Please put the discussion in the light of graf theoretical properties.
+
+Input graph must be directed and asyclical.
+
+
+
+3. What kind of the graph algorithms did you use in your implementation
+
+DFS and "Detect Cycle in Directed Graph Algorithm"
